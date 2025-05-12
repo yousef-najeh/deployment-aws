@@ -1,0 +1,9 @@
+{
+  "name": "my-amplify-app",
+  "version": "1.0.0",
+  "description": "Static website hosted on AWS Amplify",
+  "scripts": {
+    "build": "echo 'No build required'",
+    "start": "echo 'No start required'"
+  }
+} 
