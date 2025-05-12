@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>My First AWS Amplify App</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            background-color: #f0f2f5; 
+        } 
+        .container { 
+            background-color: white; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+            padding: 30px; 
+            width: 80%; 
+            max-width: 600px; 
+            text-align: center; 
+        } 
+        h1 { 
+            color: #232f3e; 
+        } 
+        .aws-color { 
+            color: #ff9900; 
+        } 
+        .status { 
+            margin-top: 20px; 
+            padding: 15px; 
+            background-color: #edfdf9; 
+            border-radius: 4px; 
+            border-left: 4px solid #00a1c9; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h1>Hello, <span class="aws-color">AWS Amplify</span>!</h1> 
+        <p>This is my first web application deployed with AWS Amplify.</p> 
+        <div class="status"> 
+            <p>Deployment status: <strong>SUCCESS</strong></p> 
+            <p>Deployment time: <span id="timestamp"></span></p> 
+        </div> 
+    </div> 
+    <script> 
+        document.getElementById('timestamp').textContent = new Date().toLocaleString(); 
+    </script> 
+</body> 
+</html> 
